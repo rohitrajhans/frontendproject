@@ -15,8 +15,6 @@ body {
 	background: -webkit-linear-gradient(to bottom, #3c2ecc 0%,#7db9e8 99%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, #3c2ecc 0%,#7db9e8 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c2ecc', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
-	color: white;
-	height: 350px;
 	color: #cbced3;
 	font-family: "Bookman";
 }
@@ -26,28 +24,38 @@ body {
 		color: #cbced3;
 	}
 
-	.header > .listLinks {
-		display: inline-block;
+	.container1 {
+		margin: 0 auto;
+		width: 768px;
 	}
 
-	.header .colTitle { 
-		margin-top: 20px;
+	.container1 > p {
+		display: inline-block;
+		padding: 0 20px;
+		margin-top: 30px;
+	}
+
+	.colTitle { 
 		font-weight: 200;
 		font-size: 300%;
-		text-align: center;
+		margin-right: 80px;
 	}
 
-	.header .colLink {
-		margin-top: 35px;
+	.colLink {
 		font-size: 140%;
 		cursor: pointer;
 	}
 
-	.header > .headerMsg {
-		margin-top: 200px;
-		text-align: center;
+	.headerMsg {
 		font-size: 200%;
 		color: white;
+	}
+
+	.header > .container2 {
+		margin: 0 auto;
+		width: 300px;
+		margin-top: 130px;
+		padding-bottom: 80px;
 	}
 
 
@@ -58,31 +66,27 @@ body {
 	/*-----------------------------------SECTION 2 ----------------------------------------------------*/
 
 	.list {
-		display: inline-block;
-		width: 100%;
-		text-align: center;
+		width: 550px;
+		margin: 0 auto;
 
 	}
 
 	.list > section {
 		display: inline-block;
-		padding: 10px 30px;
-		margin-top: 50px; 
+		padding: 0 30px; 
 	}
 
 	.listItem > p{
 		display: block;
 		padding-top: 20px;
 		color: #72757c;
-	}
-
-	.listItem > img {
-		padding-bottom: 10px;
+		text-align: center;
 	}
 
 	.listImage {
 		height: 120px;
 		width: 120px;
+		padding-bottom: 10px;
 	}
 
 
@@ -92,25 +96,32 @@ body {
 
 @media screen and (max-width: 768px) {
 
-
-	.header {
-		height: 400px;
-	}
-
-	.colLink {
-		display: block;
-		text-align: center;
-	}
-
-	.header > .headerMsg {
+	.container2  {
 		display: none;
 	}
 
+	.container1 {
+		margin: 0 0;
+		width: 100%;
+	}
+
+	.container1 > p {
+		display: block;
+		margin: 0 ;
+		padding: 20px 20px;
+		text-align: center;
+	}
+
+	
 	/*---------HEADER DONE---------------------*/
+
+	.list {
+		margin: 0 0;
+		width: 100%;	
+	}
 
 	.list > section {
 		display: block;
-		border-radius: 5px;
 	}
 
 
