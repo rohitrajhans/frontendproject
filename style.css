@@ -1,0 +1,119 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+
+}
+
+/* --------------------------------------SECTION 1 ------------------------------------------------*/
+.header {
+	background: #1e5799; /* Old browsers */
+	background: -moz-linear-gradient(to bottom, #3c2ecc 0%, #7db9e8 99%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(to bottom, #3c2ecc 0%,#7db9e8 99%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #3c2ecc 0%,#7db9e8 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c2ecc', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+	color: white;
+	height: 350px;
+	color: #cbced3;
+	font-family: "Bookman";
+}
+
+	.header a {
+		text-decoration: none;
+		color: #cbced3;
+	}
+
+	.header > .listLinks {
+		display: inline-block;
+	}
+
+	.header .colTitle { 
+		margin-top: 20px;
+		font-weight: 200;
+		font-size: 300%;
+		text-align: center;
+	}
+
+	.header .colLink {
+		margin-top: 35px;
+		font-size: 140%;
+		cursor: pointer;
+	}
+
+	.header > .headerMsg {
+		margin-top: 200px;
+		text-align: center;
+		font-size: 200%;
+		color: white;
+	}
+
+
+
+	/* --------------------------------------  END OF SECTION 1 --------------------------------------------*/ 
+
+
+	/*-----------------------------------SECTION 2 ----------------------------------------------------*/
+
+	.list {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+
+	}
+
+	.list > section {
+		display: inline-block;
+		padding: 10px 30px;
+		margin-top: 50px; 
+	}
+
+	.listItem > p{
+		display: block;
+		padding-top: 20px;
+		color: #72757c;
+	}
+
+	.listItem > img {
+		padding-bottom: 10px;
+	}
+
+	.listImage {
+		height: 120px;
+		width: 120px;
+	}
+
+
+/*--------------------------------------END OF SECTION 2 ------------------------------------------------*/
+
+/*-----------------------------------------RESPONSIVE------------------------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+
+
+	.header {
+		height: 400px;
+	}
+
+	.colLink {
+		display: block;
+		text-align: center;
+	}
+
+	.header > .headerMsg {
+		display: none;
+	}
+
+	/*---------HEADER DONE---------------------*/
+
+	.list > section {
+		display: block;
+		border-radius: 5px;
+	}
+
+
+}
+
+
