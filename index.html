@@ -39,6 +39,42 @@
 		</section>
 	</div>	
 
+	<!--- *************** Button ********* -->
+	<div class="addButton" > 
+		<span class="glyphicon glyphicon-plus" onclick="formDisplay()"> </span>
+	</div>
+	
+	<form id="form" method="post">
+		<fieldset class="addItem">
+			<div class="itemAdd">
+				<label>
+					Item
+				</label>
+					<input type="text" name="name" placeholder = "Item Name" required >
+			</div>
+			
+			<div class="desAdd">	
+				<label>
+					Description
+				</label>		
+					<input type="text" name="description" placeholder="Describe">
+			</div>
+
+			<div class="imgAdd">
+				<div>
+					<label>
+						Image
+					</label>	
+					<input class="imgFile" type="file"  accept=".jpg, .jpeg, .png" name="itemImage">
+				</div>
+				<div class="addBtn">
+					<button name="submit"> Add Item </button>
+				</div>
+			</div>
+
+		</fieldset>
+	</form>
+
 <script type="text/javascript" src="script.js"></script> 
 </body>
 </html>

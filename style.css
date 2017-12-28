@@ -5,7 +5,6 @@
 
 
 body {
-
 }
 
 /* --------------------------------------SECTION 1 ------------------------------------------------*/
@@ -91,6 +90,77 @@ body {
 
 
 /*--------------------------------------END OF SECTION 2 ------------------------------------------------*/
+
+
+/*---------------------------- Glyphicon and Form ------------------------------------------------*/
+
+.addButton {
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+	cursor: pointer;
+	border-radius: 50%;
+	border: 10px solid #2b5aa5;
+	background-color: #2b5aa5;
+}
+.glyphicon {
+	font-size: 25px; 
+	color: white;
+}
+
+form {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 20px;
+	display: none;
+	background-color: white;
+	overflow: hidden;
+	width: 300px;	
+	color: #206487;
+}
+
+.form > fieldset {
+	margin: 0;
+	padding: 0;
+}
+.imgAdd {
+	background: #e5e5e5;
+}
+.imgAdd input  {
+	font-size: 12px;
+}
+.imgAdd button {
+	font-size: 16px;
+	background: linear-gradient(#49708f, #293f50);
+  	border: 0;
+ 	color: #fff;
+ 	padding: 6px 12px;
+}
+.imgAdd input {
+	display: inline-block;
+	padding: 5px 0;
+}
+.imgAdd div {
+	margin: 15px 0;
+}
+.imgAdd >  .addBtn {
+	margin-bottom: 0;
+}
+.itemAdd input, .desAdd input {
+	border-radius: 5px;
+}
+.addItem {
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+.addItem > div {
+	padding: 20px 15px;
+}
+
+
 
 /*-----------------------------------------RESPONSIVE------------------------------------------------------------*/
 
