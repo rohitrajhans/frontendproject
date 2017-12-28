@@ -8,13 +8,14 @@
 </head>
 <body>	
 	
-
 	<section class= "header" >
 		<div class="container1">
-			<p class = "colTitle"> Awesome List </p>
-			<p>	<a class="colLink" href="#listItem1" onclick="highlight()"> Awesome 1 </a> </p>
-			<p>	<a class="colLink" href="#listItem2"> Awesome 2 </a> </p>
-			<p>	<a class="colLink" href="#listItem3"> Awesome 3 </a> </p>
+			<div class="title"> <p class = "colTitle"> Awesome List </p> </div>
+			<div class="listItems">
+				<p>	<a class="colLink" href="#listItem1" onclick="highlight()"> Awesome 1 </a> </p>
+				<p>	<a class="colLink" href="#listItem2"> Awesome 2 </a> </p>
+				<p>	<a class="colLink" href="#listItem3"> Awesome 3 </a> </p>
+			</div>
 		</div>
 		<div class="container2"> <p class="headerMsg"> Awesomness begins here. </p> </div>
 	</section>
@@ -26,16 +27,19 @@
 			<p> <img src=" media/hungry.jpg " class="listImage"> </p> 
 			<p> Awesome Item 1 </p>
 			<p> Description </p> 
+			<div class="mobSection"> </div>
 		</section>
 		<section class=" listItem "> <a name="listItem2"> </a> </p>
 			<p> <img src=" media/rude.jpg " class="listImage">
 			<p> Awesome Item 2 </p>
 			<p> Description </p>
+			<div class="mobSection"> </div>
 		</section>
 		<section class=" listItem "> <a name="listItem3"> </a> 
 			<p> <img src=" media/eyes.jpg " class="listImage"> </p>
 	 		<p> Awesome Item 3 </p>
 			<p> Description </p>
+			<div class="mobSection"> </div>	
 		</section>
 	</div>	
 
@@ -43,21 +47,22 @@
 	<div class="addButton" > 
 		<span class="glyphicon glyphicon-plus" onclick="formDisplay()"> </span>
 	</div>
-	
-	<form id="form" method="post">
+
+	<section class="backdrop">	
+	<form id="form" method="post" onsubmit="myFunction()">
 		<fieldset class="addItem">
 			<div class="itemAdd">
 				<label>
 					Item
 				</label>
-					<input type="text" name="name" placeholder = "Item Name" required >
+					<input type="text" name="name" placeholder = "Item Name" id="name" required >
 			</div>
 			
 			<div class="desAdd">	
 				<label>
 					Description
 				</label>		
-					<input type="text" name="description" placeholder="Describe">
+					<input type="text" name="description" id="description" placeholder="Describe">
 			</div>
 
 			<div class="imgAdd">
@@ -65,16 +70,16 @@
 					<label>
 						Image
 					</label>	
-					<input class="imgFile" type="file"  accept=".jpg, .jpeg, .png" name="itemImage">
+					<input class="imgFile" type="file" id="image" accept=".jpg, .jpeg, .png" name="itemImage">
 				</div>
 				<div class="addBtn">
-					<button name="submit"> Add Item </button>
+					<button type="button" onclick ="myFunction()" name="submit"> Add Item </button>
 				</div>
 			</div>
 
 		</fieldset>
 	</form>
-
+</section>
 <script type="text/javascript" src="script.js"></script> 
 </body>
 </html>
